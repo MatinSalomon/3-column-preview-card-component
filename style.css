@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+:root{
+    --BrightOrange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+}
+
+
+#container{
+    display: grid;
+    place-content: center;
+    margin-top: 15vh;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: 60vh;
+}
+.cards {
+    padding-left: 2vw;
+}
+
+.cards img{
+    margin-top: 5vh;
+}
+
+.cards h2{
+    font-family: 'Big Shoulders Display', cursive;  
+    color: white;
+    font-size: 3vw;
+}
+
+.cards p{
+    color: white;
+    padding-right: 3vw;
+}
+.cards button{
+    margin-top: 20%;
+    text-align: center;
+    border: none;
+    width: 40%;
+    height: 7%;
+    border-radius: 20px;
+}
+
+.card-yellow{
+    background-color: var(--BrightOrange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-yellow button{
+    color: var(--BrightOrange);
+}
+
+.card-blue{
+    background-color: var(--Darkcyan);
+}
+.card-blue button{
+    color: var(--Darkcyan);
+}
+
+.card-green{
+    background-color: var(--VeryDarkCyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card-green button{
+    color: var(--VeryDarkCyan);
+}
+
+@media (max-width: 412px) {
+
+    #container{
+        place-content: none;
+        margin-top: 0%;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(3, 60vh);
+    }
+
+    .cards h2{
+        font-size: 10vw;
+    }
+   
+    .cards button{
+        color: var(--Darkcyan);
+        margin-top: 5%;
+    }
+
+    .card-yellow{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card-green{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
